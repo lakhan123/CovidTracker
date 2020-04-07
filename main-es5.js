@@ -882,6 +882,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           console.log("---------------------date-----------------------");
         }
       }, {
+        key: "ngAfterViewInit",
+        value: function ngAfterViewInit() {
+          window.setTimeout(function () {
+            return 500;
+          });
+          this.loadDailyGraph();
+          this.loadTotalGraph();
+        }
+      }, {
         key: "loadDailyGraph",
         value: function loadDailyGraph() {
           this.chart = new chart_js__WEBPACK_IMPORTED_MODULE_1__["Chart"]('daily', {
@@ -895,7 +904,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               responsive: true,
               title: {
                 display: true,
-                text: 'COVID-19 INDIA'
+                text: 'COVID-19 INDIA DAILY GRAPH'
               }
             },
             data: {
@@ -939,7 +948,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               responsive: true,
               title: {
                 display: true,
-                text: 'COVID-19 INDIA'
+                text: 'COVID-19 INDIA GRAPH'
               }
             },
             data: {
@@ -981,9 +990,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     CoronaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: CoronaComponent,
       selectors: [["app-corona"]],
-      decls: 42,
+      decls: 38,
       vars: 9,
-      consts: [[1, "form-control", "navbar-brand"], [1, "table", "navbar-light", "bg-light"], [1, "table-primary"], ["scope", "col"], [4, "ngFor", "ngForOf"], [3, "click"], [1, "chart-display"], ["id", "daily"], ["id", "total"]],
+      consts: [[1, "form-control", "navbar-brand"], [1, "table", "navbar-light", "bg-light"], [1, "table-primary"], ["scope", "col"], [4, "ngFor", "ngForOf"], [1, "chart-display"], ["id", "daily"], ["id", "total"]],
       template: function CoronaComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "html");
@@ -1084,37 +1093,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "button", 5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "div", 5);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CoronaComponent_Template_button_click_33_listener() {
-            return ctx.loadDailyGraph();
-          });
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34, "Daily Graph");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](34, "canvas", 6);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](35, "br");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "button", 5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "div", 5);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CoronaComponent_Template_button_click_36_listener() {
-            return ctx.loadTotalGraph();
-          });
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "Total Graph");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "div", 6);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](39, "canvas", 7);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "div", 6);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](41, "canvas", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](37, "canvas", 7);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
