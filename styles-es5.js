@@ -340,7 +340,7 @@
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! C:\Users\CodeBreaker\Downloads\my-app\src\styles.css */
+    /*! C:\Application\Project\my-app\src\styles.css */
     "./src/styles.css");
     /***/
   }
