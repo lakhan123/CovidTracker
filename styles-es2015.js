@@ -329,7 +329,7 @@ module.exports = exported;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Application\Project\my-app\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\CodeBreaker\Downloads\my-app\src\styles.css */"./src/styles.css");
 
 
 /***/ })
